@@ -1,0 +1,23 @@
+/*
+ESTILOS DE MI APLICACION
+*/
+body{
+    background-color: #ccc;
+}
+h2{
+    color:#900;
+}
+p{
+    color: #009;
+    background-color: #ccc
+}
+div{
+    background-color: #aaa;
+
+}      
+#cabecera{
+    background-color: green;
+}
+.articulo{
+    color: #cc0;
+}
