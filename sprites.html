@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejercicio de sprites</title>
+    <style>
+        .social_bar{
+            position: relative;
+        }
+        .social_bar li{
+            margin: 0;
+            padding: 0;
+            list-style: none;
+            position: absolute;
+            top: 0;
+        }
+        .social_bar li,.social_bar a{
+            height: 225px;
+            display: block;
+            border: 1px solid #ccc;
+        }
+        #facebook{
+            left:0;
+            width: 225px;
+            background: url('img/css_sprites.png');
+        }
+        #twitter{
+            left: 280px;
+            width: 225px;
+            background: url('img/css_sprites.png')  -225px 0;
+        }
+        #youtube{
+            left: 580px;
+            width: 225px;
+            background: url('img/css_sprites.png') -450px 0;
+        }
+    </style>
+</head>
+<body>
+    <h2>Redes sociales</h2>
+    <ul class="social_bar"> 
+        <li id="facebook"><a href="#"></a></li>
+        <li id="youtube"><a href="#"></a></li>
+        <li id="twitter"><a href="#"></a></li>
+    </ul>
+</body>
+</html>
