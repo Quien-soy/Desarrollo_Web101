@@ -5,16 +5,95 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <script>
-        var nombre = window.prompt("Introduzca su nombre: ");
-        var edad = window.prompt("Introduzca edad: ");
-        var saludo ='Hola '+nombre+' tu edad es de '+edad+' años';
-        alert(saludo);
-        console.log(saludo);
-        console.log("El saludo tiene una longitud de: "+saludo.length);
-    </script>
+
 </head>
 <body>
     <h2>Ejemplos de javascript</h2>
+    <input type="text" id="entrada">
+    <button onclick="alert()" id="mi_boton">Click Aqui</button>
+    <!-- <h1 id="uno">
+        Titulo uno
+    </hi>
+    <h1 class="titulo">
+        Titulo dos
+    </hi>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident, quia perferendis saepe quibusdam aliquam blanditiis dignissimos recusandae, illum quo a laudantium est maiores fugit cumque doloribus in nam facere.</hi>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident, quia perferendis saepe quibusdam aliquam blanditiis dignissimos recusandae, illum quo a laudantium est maiores fugit cumque doloribus in nam facere.</hi>
+    <h1 class="titulo">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident, quia perferendis saepe quibusdam aliquam blanditiis dignissimos recusandae, illum quo a laudantium est maiores fugit cumque doloribus in nam facere.</hi>
+    <h1>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolores provident, quia perferendis saepe quibusdam aliquam blanditiis dignissimos recusandae, illum quo a laudantium est maiores fugit cumque doloribus in nam facere.</hi> -->
+
+    <script>
+            // var nombre = window.prompt("Introduzca su nombre: ");
+            // var edad = window.prompt("Introduzca edad: ");
+            // var saludo ='Hola '+nombre+' tu edad es de '+edad+' años';
+            // alert(saludo);
+            // console.log(saludo);
+            // console.log("El saludo tiene una longitud de: "+saludo.length);
+    
+            // FUNCIONES
+            // function saludar(){
+            //     console.log('Hola mundo desde Javascript')
+            // }
+            // saludar();
+            // var sumar = function(a,b){
+            //     var x = a+b;
+            //     console.log('El resultado es: '+x)
+            // }
+    
+            // sumar(3,4);
+    
+            // AMBITOS DE VARIABLES
+            // var a = "Esta es una A afuera";
+            // if(true){
+            //     var a = "Esta es una A adentro"
+            //     console.log(a);
+            // }
+            // console.log(a);
+            
+            // /* OBJETOS*/
+            //  var coche1 = new Object();
+            //      coche1.color = "rojo";
+            //      coche1.marca = "Toyota";
+            //      coche1.arrancar = function(){
+            //          console.log("Arrancando coche")
+            //      }
+            //      console.log(coche1.color);
+            //      console.log(coche1.marca);
+            //      coche1.arrancar();
+    
+            //      var coche2 ={
+            //          color: "Verde",
+            //          marca: "Ford",
+            //          arrancar: function(){
+            //              console.log("Arrancando coche 2")
+            //             }
+            //      }
+            //      console.log(coche2.color);
+            //      console.log(coche2.marca);
+            //      coche1.arrancar();
+    
+         /* SELECTORES DE JAVASCRIPT*/
+          // POR ID
+        //  var x = document.getElementById('uno');
+        //  x.innerHTML;
+        //  console.log(x);
+        //  var y = document.getElementsByClassName('titulo');
+        //  console.log(y);
+        //  var z = document.getElementsByTagName('h1');
+        //  for(var i = 0 ; i < y.length; i++){
+        //      cocnsole.log(i);
+        //  }
+        //  console.log(z);
+        //  var a = document.querySelector('#uno');
+        //  console.log(a);
+        //  var b = document.querySelectorAll('.titulo');
+        //  cocnsole.log(b);
+        document.getElementById('mi_boton').addEventListener("mouseover", function(){
+            // console.log('El usuario ha hecho un click');
+            let x = document.getElementById('entrada');
+            console.log(x.value);
+        });
+
+    </script>
 </body>
 </html>
